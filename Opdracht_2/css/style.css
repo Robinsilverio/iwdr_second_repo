@@ -73,6 +73,10 @@ main{
     width: 80%;
     float: right;
 }
+main #contact_header, main #contact_header ~ p{
+    text-align: center;
+}
+
 article{
     margin: 4% auto;
     max-width: 800px;
@@ -134,15 +138,6 @@ input[type=submit] {
   float: none;
 }
 
-/* Style the container */
-#form-container {
-  border-radius: 5px;
-  background-color: #42a4f4;
-  padding: 20px;
-  margin: 4% auto;
-  max-width: 800px;
-}
-
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
@@ -173,8 +168,4 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-
-  /* .container{
-      width: 80%;
-  } */
 }
