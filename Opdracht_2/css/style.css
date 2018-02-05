@@ -1,0 +1,27 @@
+html{
+  font-family: 'Arial';
+  margin: auto;
+  padding: auto;
+  color: rgb(1, 0, 80);
+}
+
+article{
+    margin: 4% auto;
+    max-width: 800px;
+}
+
+article h1{
+  text-align: center;
+}
+article #inleiding{
+    font-weight: bold;
+}
+
+article figure > img{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    body{
+        background: orange;
+    }
+}
