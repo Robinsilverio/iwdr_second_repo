@@ -1,4 +1,4 @@
-html{
+html, body{
   font-family: 'Arial';
   margin: auto;
   padding: auto;
@@ -7,35 +7,48 @@ html{
 
 /*Styling for navigation bar*/
 nav{
-    height: 50px;
+    float: left;
+    width: 20%;
+    background: #eee;
+    position: fixed;
+    height: 100%;
 }
 /*For unordered list*/
 nav ul{
     list-style-type: none;
     margin: 0;
-    padding: 20px;
-    overflow: hidden;
-    background-color: #eee;
+    padding: 0;
 }
 /*Float all list-items to left side of the navbar*/
 nav ul li{
-    float: left;
+    margin: auto;
+    border-bottom: 1px solid #CCC;
 }
 /*Add some padding to give spaces between two links*/
 nav ul li a{
-   padding: 14px 96px;
-   color: #000;
-   text-decoration: none;
-   cursor: pointer;
+    display: block;
+    padding: 1em;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*This is for changing background color when user hovers on a link*/
-nav ul li a:hover{
+nav ul li a:hover, .selected{
     background: rgb(1, 0, 80);
     text-decoration: underline;
     color: #FFF;
 }
+
+/* nav .navbar-logo{
+    font-size: 24px;
+    line-height: 1.042;
+    height: 53px;
+    font-weight: 700;
+    padding: 14px 21px;
+} */
+
 /*Responsive layout for ipad, mobile large, medium and small*/
-@media screen and (max-width: 1400px) and (min-width: 426px) {
+/* @media screen and (max-width: 1400px) and (min-width: 426px) {
     nav ul li a{
         padding: 14px 81px;
     }
@@ -54,8 +67,12 @@ nav ul li a:hover{
     nav ul li a{
         padding: 14px 13px;
     }
-}
+} */
 /*Styling for article page*/
+main{
+    width: 80%;
+    float: right;
+}
 article{
     margin: 4% auto;
     max-width: 800px;
@@ -72,6 +89,19 @@ article #inleiding{
 article figure > img{
     width: 100%;
 }
+@media (max-width: 800px){
+    nav, main{
+        float: none;
+        width: 100%;
+    }
+    nav{ position: relative; }
+    article{
+        margin: 5%;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+}
 /*
 *==========================================================================
 * Styling for contact page, why to have an empty contact page just for testing the navigation links? Please answer that Teacher ;)
@@ -79,7 +109,7 @@ article figure > img{
 */
 /* Style inputs, select elements and textareas */
 input, select, textarea{
-  width: 100%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -101,17 +131,16 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+  float: none;
 }
 
 /* Style the container */
-.container {
+#form-container {
   border-radius: 5px;
   background-color: #42a4f4;
   padding: 20px;
-  /* margin: 20px; default styling */
   margin: 4% auto;
-  width: 700px;
+  max-width: 800px;
 }
 
 /* Floating column for labels: 25% width */
@@ -136,7 +165,8 @@ input[type=submit] {
 }
 
 /*
-* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other
+* Responsive layout - when the screen is less than 600px wide,
+* make the two columns stack on top of each other instead of next to each other
 */
 @media (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -144,7 +174,7 @@ input[type=submit] {
     margin-top: 0;
   }
 
-  .container{
+  /* .container{
       width: 80%;
-  }
+  } */
 }
