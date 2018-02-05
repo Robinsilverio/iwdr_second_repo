@@ -34,25 +34,25 @@ nav ul li a:hover{
     text-decoration: underline;
     color: #FFF;
 }
-/*Responsive styling for ipad, mobile large, medium and small*/
-@media screen and (max-width: 768px) {
+/*Responsive layout for ipad, mobile large, medium and small*/
+@media screen and (max-width: 1400px) and (min-width: 426px) {
     nav ul li a{
         padding: 14px 81px;
     }
 }
-@media screen and (max-width: 426px){
+@media screen and (max-width: 426px) and (min-width: 376px){
     nav ul li a{
-        padding: 14px 25px;
+        padding: 14px 23px;
     }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 376px) and (min-width: 360px) {
     nav ul li a{
         padding: 14px 17px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     nav ul li a{
-        padding: 14px 8px;
+        padding: 14px 13px;
     }
 }
 /*Styling for article page*/
@@ -106,10 +106,12 @@ input[type=submit] {
 
 /* Style the container */
 .container {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #42a4f4;
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; default styling */
+  margin: 4% auto;
+  width: 700px;
 }
 
 /* Floating column for labels: 25% width */
@@ -140,5 +142,9 @@ input[type=submit] {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+
+  .container{
+      width: 80%;
   }
 }
