@@ -11,10 +11,11 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <a class="navbar-logo" href="index.html">Testwebsite</a>
+      <ul class="slider">
         <li><a href="index.html">Nieuws</a></li>
         <li><a href="bestemmingen.html">Bestemmingen</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="selected" href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -22,34 +23,34 @@
       <p>Wij creëren satiristische nieuwsartikelen, dus voel vrij om hallo te zeggen!!</p>
       <form action="#">
         <div class="row">
-          <div class="col-25">
+          <div class="col-label">
             <label for="voornaam">Voornaam: </label>
           </div>
-          <div class="col-60">
+          <div class="col-input">
             <input type="text" id="voornaam" name="voornaam" required placeholder="Jouw voornaam..">
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-label">
             <label for="achternaam">Achternaam: </label>
           </div>
-          <div class="col-60">
+          <div class="col-input">
             <input type="text" id="achternaam" required name="achternaam" placeholder="Jouw achternaam..">
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-label">
             <label for="achternaam">Emailadres: </label>
           </div>
-          <div class="col-60">
+          <div class="col-input">
             <input type="email" id="email" required name="email" placeholder="Jouw emailadres..">
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-label">
             <label for="land">Land: </label>
           </div>
-          <div class="col-60">
+          <div class="col-input">
             <select id="land" name="land">
               <option value="nederland">Nederland</option>
               <option value="duitsland">Duitsland</option>
@@ -58,10 +59,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-label">
             <label for="subject">Subject: </label>
           </div>
-          <div class="col-60">
+          <div class="col-input">
             <textarea id="subject" name="subject" placeholder="Schrijf een bericht..." style="height:200px"></textarea>
           </div>
         </div>
