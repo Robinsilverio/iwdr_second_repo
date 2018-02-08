@@ -17,7 +17,7 @@ nav{
     position: fixed;
     height: 100%;
 }
-nav #hamburger, .menuicon{
+#hamburger, .menuicon{
     display: none;
 }
 /*For unordered list*/
@@ -94,8 +94,20 @@ article figure > img{
     }
     nav{
         position: relative;
+        overflow: hidden;
+        height: 56px;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-delay: 0.2s;
+        -moz-transition-delay: 0.2s;
+        -ms-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        transition-delay: 0.2s;
     }
-    nav .menuicon{
+    .menuicon{
         position: absolute;
         top: 10px;
         right: 10px;
@@ -103,8 +115,9 @@ article figure > img{
         cursor: pointer;
         height: 21px;
         width: 25px;
+        z-index: 1;
     }
-    nav .menuicon span{
+    .menuicon span{
         display: block;
         top: 8px;
         width: 25px;
@@ -122,7 +135,7 @@ article figure > img{
         -o-transition-delay: 0.2s;
         transition-delay: 0.2s;
     }
-    nav .menuicon span::after, nav .menuicon span::before{
+    .menuicon span::after, .menuicon span::before{
         display: block;
         content: '';
         position: absolute;
@@ -141,17 +154,21 @@ article figure > img{
         -o-transition-delay: 0.2s, 0;
         transition-delay: 0.2s, 0;
     }
-    nav .menuicon span::before {
+    .menuicon span::before {
         margin-top: -8px;
     }
-    nav .menuicon span::after {
+    .menuicon span::after {
         margin-top: 8px;
     }
     /*This is for rotating the borders of hamburger-icon*/
-    nav #hamburger:checked ~ .menuicon span{
+    #hamburger:checked ~ .menuicon span{
         background: rgba(0, 0, 0, 0);
     }
-    nav #hamburger:checked ~ .menuicon span::before, nav #hamburger:checked ~ .menuicon span::after{
+    /*And this is for sliding down a navbar*/
+    #hamburger:checked ~ nav{
+        height: 212px;
+    }
+    #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
         margin-top: 0;
         -webkit-transition-delay: 0, 0.2s;
         -moz-transition-delay: 0, 0.2s;
@@ -159,14 +176,14 @@ article figure > img{
         -o-transition-delay: 0, 0.2s;
         transition-delay: 0, 0.2s;
     }
-    nav #hamburger:checked ~ .menuicon span::before{
+    #hamburger:checked ~ .menuicon span::before{
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-    nav #hamburger:checked ~ .menuicon span::after{
+    #hamburger:checked ~ .menuicon span::after{
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
