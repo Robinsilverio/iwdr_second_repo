@@ -5,6 +5,18 @@ html, body{
   color: rgb(1, 0, 80);
 }
 
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+p{
+    line-height: 1.55;
+}
+
 /*
 *==========================================================================
 * Styling for navigation bar
@@ -60,6 +72,7 @@ nav .navbar-logo{
     font-weight: 700;
     text-decoration: none;
     color: darkblue;
+    margin: 15px;
 }
 
 main{
@@ -76,16 +89,40 @@ article{
     max-width: 800px;
 }
 /*Of course, header must be centered*/
-article h1{
+article .news_title{
   text-align: center;
 }
 /*Short text description must be bold*/
 article #inleiding{
     font-weight: bold;
 }
+article figure{
+    margin: auto;
+}
 /*Give image 100% width of main*/
 article figure > img{
     width: 100%;
+}
+
+ol{
+    padding: 0;
+    list-style-position: inside;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table th, td{
+    text-align: left;
+    font-size: 1.0em;
+    padding: 10px;
+    border: 2px solid rgb(1, 0, 80);
+}
+table tr:nth-child(even){
+    background: rgb(1, 0, 80);
+    opacity: 0.5;
+    color: #FFF;
 }
 
 /*
@@ -211,6 +248,9 @@ article figure > img{
     }
     h1{
         font-size: 1.8em;
+    }
+    table th, td{
+        font-size: 0.8em;
     }
 }
 /*
