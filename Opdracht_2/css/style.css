@@ -17,11 +17,14 @@ nav{
     position: fixed;
     height: 100%;
 }
+nav #hamburger, .menuicon{
+    display: none;
+}
 /*For unordered list*/
 nav ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 30px 0px;
 }
 /*Float all list-items to left side of the navbar*/
 nav ul li{
@@ -37,18 +40,24 @@ nav ul li a{
     cursor: pointer;
 }
 /*This is for changing background color when user hovers on a link*/
-nav ul li a:hover, .selected{
+nav ul li a:hover{
+    background: rgb(1, 0, 80);
+    text-decoration: underline;
+    color: #FFF;
+    opacity: 0.8;
+}
+.selected{
     background: rgb(1, 0, 80);
     text-decoration: underline;
     color: #FFF;
 }
 
 nav .navbar-logo{
-    font-size: 30px;
+    position: relative;
+    top: 17px;
+    font-size: 25px;
     line-height: 1.042;
-    height: 53px;
     font-weight: 700;
-    padding: 14px 14px;
     text-decoration: none;
     color: darkblue;
 }
@@ -83,7 +92,61 @@ article figure > img{
         float: none;
         width: 100%;
     }
-    nav{ position: relative; }
+    nav{
+        position: relative;
+    }
+    nav .menuicon{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: block;
+      cursor: pointer;
+      height: 21px;
+      width: 25px;
+    }
+    nav .menuicon span{
+      display: block;
+      top: 8px;
+      width: 25px;
+      height: 5px;
+      background-color: #000;
+      position: relative;
+      -webkit-transition-duration: 0;
+      -moz-transition-duration: 0;
+      -ms-transition-duration: 0;
+      -o-transition-duration: 0;
+      transition-duration: 0;
+      -webkit-transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      -ms-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+    nav .menuicon span::after, nav .menuicon span::before{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 5px;
+        background-color: #000;
+        -webkit-transition-property: margin, -webkit-transform;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-delay: 0.2s, 0;
+        -moz-transition-delay: 0.2s, 0;
+        -ms-transition-delay: 0.2s, 0;
+        -o-transition-delay: 0.2s, 0;
+        transition-delay: 0.2s, 0;
+    }
+    nav .menuicon span::before {
+      margin-top: -8px;
+    }
+    nav .menuicon span::after {
+      margin-top: 8px;
+    }
     article{
         margin: 5%;
     }
