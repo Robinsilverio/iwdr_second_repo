@@ -95,17 +95,17 @@ article figure > img{
     nav{
         position: relative;
         overflow: hidden;
-        height: 56px;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s;
-        -webkit-transition-delay: 0.2s;
-        -moz-transition-delay: 0.2s;
-        -ms-transition-delay: 0.2s;
-        -o-transition-delay: 0.2s;
-        transition-delay: 0.2s;
+        max-height: 56px;
+        -webkit-transition-duration: 0.25s;
+        -moz-transition-duration: 0.25s;
+        -ms-transition-duration: 0.25s;
+        -o-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+        -webkit-transition-delay: 0.25s;
+        -moz-transition-delay: 0.25s;
+        -ms-transition-delay: 0.25s;
+        -o-transition-delay: 0.25s;
+        transition-delay: 0.25s;
     }
     .menuicon{
         position: absolute;
@@ -166,7 +166,17 @@ article figure > img{
     }
     /*And this is for sliding down a navbar*/
     #hamburger:checked ~ nav{
-        height: 212px;
+        max-height: 500px;
+        -webkit-transition-duration: 0.25s;
+        -moz-transition-duration: 0.25s;
+        -ms-transition-duration: 0.25s;
+        -o-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+        -webkit-transition-delay: 0.25s;
+        -moz-transition-delay: 0.25s;
+        -ms-transition-delay: 0.25s;
+        -o-transition-delay: 0.25s;
+        transition-delay: 0.25s;
     }
     #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
         margin-top: 0;
