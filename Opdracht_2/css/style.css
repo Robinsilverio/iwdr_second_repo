@@ -83,10 +83,14 @@ article h1{
 article #inleiding{
     font-weight: bold;
 }
-/*Give*/
+/*Give image 100% width of main*/
 article figure > img{
     width: 100%;
 }
+
+/*
+* Responsive layout menu and main.
+*/
 @media (max-width: 800px){
     nav, main{
         float: none;
@@ -160,7 +164,6 @@ article figure > img{
     .menuicon span::after {
         margin-top: 8px;
     }
-    /*This is for rotating the borders of hamburger-icon*/
     #hamburger:checked ~ .menuicon span{
         background: rgba(0, 0, 0, 0);
     }
@@ -178,6 +181,7 @@ article figure > img{
         -o-transition-delay: 0.25s;
         transition-delay: 0.25s;
     }
+    /*This is for rotating span-tags of hamburger-icon*/
     #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
         margin-top: 0;
         -webkit-transition-delay: 0, 0.2s;
