@@ -58,6 +58,7 @@ nav ul li a:hover{
     color: #FFF;
     opacity: 0.8;
 }
+/*When a link is selected, keep that background color.*/
 .selected{
     background: rgb(1, 0, 80);
     text-decoration: underline;
@@ -74,7 +75,7 @@ nav .navbar-logo{
     color: rgb(1, 0, 80);
     margin: 15px;
 }
-
+/*Main styling*/
 main{
     width: 80%;
     float: right;
@@ -102,6 +103,13 @@ article figure{
 /*Give image 100% width of main*/
 article figure > img{
     width: 100%;
+}
+
+.source{
+    font-style: italic;
+}
+.copyright{
+    text-align: center;
 }
 
 ol{
