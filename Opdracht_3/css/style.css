@@ -1,7 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  margin: auto;
-  padding: auto;
+  height: 100%;
   color: rgb(1, 0, 80);
 }
 
@@ -78,7 +82,9 @@ nav .navbar-logo{
 /*Main styling*/
 main{
     width: 80%;
+    height: 100%;
     float: right;
+    overflow: auto;
 }
 main #contact_header, main #contact_header ~ p{
     text-align: center;
@@ -108,9 +114,9 @@ article figure > img{
 .source{
     font-style: italic;
 }
-.copyright{
+/* .copyright{
     text-align: center;
-}
+} */
 
 ol{
     padding: 0;
@@ -137,8 +143,8 @@ table tr:nth-child(even){
 * Responsive layout menu and main.
 */
 @media (max-width: 800px){
-    nav, main{
-        float: none;
+    nav, main, footer{
+        float: none !important;
         width: 100%;
     }
     nav{
@@ -260,6 +266,14 @@ table tr:nth-child(even){
     table th, td{
         font-size: 0.8em;
     }
+}
+/*Footer styling*/
+footer{
+    position:relative;
+    width: 80%;
+    float: right;
+    text-align: center;
+    margin: 3% auto;
 }
 /*
 *==========================================================================
