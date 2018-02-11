@@ -1,8 +1,20 @@
 html, body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
   color: rgb(1, 0, 80);
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+p{
+    line-height: 1.55;
 }
 
 /*
@@ -16,6 +28,7 @@ nav{
     background: #eee;
     position: fixed;
     height: 100%;
+    padding: 20px 0 0;
 }
 #hamburger, .menuicon{
     display: none;
@@ -23,8 +36,8 @@ nav{
 /*For unordered list*/
 nav ul{
     list-style-type: none;
-    margin: 0;
-    padding: 30px 0px;
+    padding: 0;
+    margin: 20px 0 0;
 }
 /*Float all list-items to left side of the navbar*/
 nav ul li{
@@ -46,6 +59,7 @@ nav ul li a:hover{
     color: #FFF;
     opacity: 0.8;
 }
+/*When a link is selected, keep that background color.*/
 .selected{
     background: rgb(1, 0, 80);
     text-decoration: underline;
@@ -54,17 +68,20 @@ nav ul li a:hover{
 
 nav .navbar-logo{
     position: relative;
-    top: 17px;
+    top: 0;
     font-size: 25px;
     line-height: 1.042;
     font-weight: 700;
     text-decoration: none;
-    color: darkblue;
+    color: rgb(1, 0, 80);
+    margin: 15px;
 }
-
+/*Main styling*/
 main{
     width: 80%;
+    height: 100%;
     float: right;
+    overflow: auto;
 }
 main #contact_header, main #contact_header ~ p{
     text-align: center;
@@ -76,30 +93,60 @@ article{
     max-width: 800px;
 }
 /*Of course, header must be centered*/
-article h1{
+article .news_title{
   text-align: center;
 }
 /*Short text description must be bold*/
 article #inleiding{
     font-weight: bold;
 }
+article figure{
+    margin: auto;
+}
 /*Give image 100% width of main*/
 article figure > img{
     width: 100%;
+}
+
+.source{
+    font-style: italic;
+}
+/* .copyright{
+    text-align: center;
+} */
+
+ol{
+    padding: 0;
+    list-style-position: inside;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table th, td{
+    text-align: left;
+    font-size: 1.0em;
+    padding: 10px;
+    border: 2px solid rgb(1, 0, 80);
+}
+table tr:nth-child(even){
+    background: rgb(1, 0, 80);
+    opacity: 0.5;
+    color: #FFF;
 }
 
 /*
 * Responsive layout menu and main.
 */
 @media (max-width: 800px){
-    nav, main{
-        float: none;
+    nav, main, footer{
+        float: none !important;
         width: 100%;
     }
     nav{
         position: relative;
-        overflow: hidden;
-        max-height: 56px;
+        /* max-height: 56px;
         -webkit-transition-duration: 0.25s;
         -moz-transition-duration: 0.25s;
         -ms-transition-duration: 0.25s;
@@ -109,17 +156,32 @@ article figure > img{
         -moz-transition-delay: 0.25s;
         -ms-transition-delay: 0.25s;
         -o-transition-delay: 0.25s;
-        transition-delay: 0.25s;
+        transition-delay: 0.25s; */
+    }
+    ul{
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s ease-out;
+      -moz-transition: max-height 0.3s ease-out;
+      -ms-transition: max-height 0.3s ease-out;
+      -o-transition: max-height 0.3s ease-out;
+      transition: max-height 0.3s ease-out;
     }
     .menuicon{
-        position: absolute;
+        /* position: absolute;
         top: 10px;
         right: 10px;
         display: block;
         cursor: pointer;
         height: 21px;
         width: 25px;
-        z-index: 1;
+        z-index: 1; */
+        position: relative;
+        width: 25px;
+        height: 21px;
+        display: block;
+        float: right;
+        bottom: 10px;
     }
     .menuicon span{
         display: block;
@@ -168,18 +230,13 @@ article figure > img{
         background: rgba(0, 0, 0, 0);
     }
     /*And this is for sliding down a navbar*/
-    #hamburger:checked ~ nav{
-        max-height: 500px;
-        -webkit-transition-duration: 0.25s;
-        -moz-transition-duration: 0.25s;
-        -ms-transition-duration: 0.25s;
-        -o-transition-duration: 0.25s;
-        transition-duration: 0.25s;
-        -webkit-transition-delay: 0.25s;
-        -moz-transition-delay: 0.25s;
-        -ms-transition-delay: 0.25s;
-        -o-transition-delay: 0.25s;
-        transition-delay: 0.25s;
+    #hamburger:checked ~ ul{
+        max-height: 530px;
+        -webkit-transition: max-height 0.3s ease-out;
+        -moz-transition: max-height 0.3s ease-out;
+        -ms-transition: max-height 0.3s ease-out;
+        -o-transition: max-height 0.3s ease-out;
+        transition: max-height 0.3s ease-out;
     }
     /*This is for rotating span-tags of hamburger-icon*/
     #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
@@ -212,6 +269,17 @@ article figure > img{
     h1{
         font-size: 1.8em;
     }
+    table th, td{
+        font-size: 0.8em;
+    }
+}
+/*Footer styling*/
+footer{
+    position:relative;
+    width: 80%;
+    float: right;
+    text-align: center;
+    margin: 3% auto;
 }
 /*
 *==========================================================================
