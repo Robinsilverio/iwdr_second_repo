@@ -146,17 +146,6 @@ table tr:nth-child(even){
     }
     nav{
         position: relative;
-        /* max-height: 56px;
-        -webkit-transition-duration: 0.25s;
-        -moz-transition-duration: 0.25s;
-        -ms-transition-duration: 0.25s;
-        -o-transition-duration: 0.25s;
-        transition-duration: 0.25s;
-        -webkit-transition-delay: 0.25s;
-        -moz-transition-delay: 0.25s;
-        -ms-transition-delay: 0.25s;
-        -o-transition-delay: 0.25s;
-        transition-delay: 0.25s; */
     }
     ul{
       max-height: 0;
@@ -168,14 +157,6 @@ table tr:nth-child(even){
       transition: max-height 0.3s ease-out;
     }
     .menuicon{
-        /* position: absolute;
-        top: 10px;
-        right: 10px;
-        display: block;
-        cursor: pointer;
-        height: 21px;
-        width: 25px;
-        z-index: 1; */
         position: relative;
         width: 25px;
         height: 21px;
