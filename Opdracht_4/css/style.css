@@ -5,329 +5,49 @@ html, body{
   color: rgb(1, 0, 80);
 }
 
+body{
+    background-image: url('../img/jpg/hout.jpg');
+}
+
 h1{
     font-size: 2.5em;
-}
-
-h2{
-    font-size: 1.2em;
-}
-
-p{
-    line-height: 1.55;
-}
-
-/*
-*==========================================================================
-* Styling for navigation bar
-*==========================================================================
-*/
-nav{
-    float: left;
-    width: 20%;
-    background: #eee;
-    position: fixed;
-    height: 100%;
-    padding: 20px 0 0;
-}
-#hamburger, .menuicon{
-    display: none;
-}
-/*For unordered list*/
-nav ul.slider{
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0;
-}
-/*Float all list-items to left side of the navbar*/
-nav ul.slider li{
-    margin: auto;
-    border-bottom: 1px solid #CCC;
-}
-/*Add some padding to give spaces between two links*/
-nav ul.slider li a{
-    display: block;
-    padding: 1em;
-    color: #FFF;
-    text-decoration: none;
-    cursor: pointer;
-}
-/*This is for changing background color when user hovers on a link*/
-nav ul.slider li a:hover{
-    background: rgb(1, 0, 80);
-    text-decoration: underline;
-    color: #FFF;
-    opacity: 0.8;
-}
-/*When a link is selected, keep that background color.*/
-.selected{
-    background: rgb(1, 0, 80);
-    text-decoration: underline;
+    margin: 0;
     color: #FFF;
 }
 
-nav .navbar-logo{
-    position: relative;
-    top: 0;
-    font-size: 25px;
-    line-height: 1.042;
-    font-weight: 700;
-    text-decoration: none;
-    color: rgb(1, 0, 80);
-    margin: 15px;
-}
-/*Main styling*/
-main{
-    width: 80%;
-    height: 100%;
-    float: right;
-    overflow: auto;
-}
-main #contact_header, main #contact_header ~ p{
+header{
+    margin: 0;
+    padding: 1.5em 0;
+    background: #444;
     text-align: center;
+    display: block;
 }
 
-/*Styling for article page*/
-article{
-    margin: 4% auto;
-    max-width: 800px;
-}
-/*Of course, header must be centered*/
-article .news_title{
-  text-align: center;
-}
-/*Short text description must be bold*/
-article #inleiding{
-    font-weight: bold;
-}
-article figure{
-    margin: auto;
-}
-/*Give image 100% width of main*/
-article figure > img{
-    width: 100%;
+main{
+    max-width: 1000px;
+    margin: 2em auto;
 }
 
-.source{
-    font-style: italic;
-}
-
-ol, ul#digital_menu{
+ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin: 0;
     padding: 0;
-    list-style-position: inside;
 }
-table{
+
+ul img{
     width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-table th, td{
-    text-align: left;
-    font-size: 1.0em;
-    padding: 10px;
-    border: 2px solid rgb(1, 0, 80);
-}
-table tr:nth-child(even){
-    background: rgb(1, 0, 80);
-    opacity: 0.5;
-    color: #FFF;
 }
 
-/*
-* Responsive layout menu and main.
-*/
-@media (max-width: 800px){
-    nav, main, footer{
-        float: none !important;
-        width: 100%;
-    }
-    nav{
-        position: relative;
-    }
-    ul.slider{
-      max-height: 0;
-      overflow: hidden;
-      -webkit-transition: max-height 0.3s ease-out;
-      -moz-transition: max-height 0.3s ease-out;
-      -ms-transition: max-height 0.3s ease-out;
-      -o-transition: max-height 0.3s ease-out;
-      transition: max-height 0.3s ease-out;
-    }
-    .menuicon{
-        position: relative;
-        width: 25px;
-        height: 21px;
-        display: block;
-        float: right;
-        bottom: 10px;
-    }
-    .menuicon span{
-        display: block;
-        top: 8px;
-        width: 25px;
-        height: 5px;
-        background-color: #000;
-        position: relative;
-        -webkit-transition-duration: 0;
-        -moz-transition-duration: 0;
-        -ms-transition-duration: 0;
-        -o-transition-duration: 0;
-        transition-duration: 0;
-        -webkit-transition-delay: 0.2s;
-        -moz-transition-delay: 0.2s;
-        -ms-transition-delay: 0.2s;
-        -o-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-    }
-    .menuicon span::after, .menuicon span::before{
-        display: block;
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 5px;
-        background-color: #000;
-        -webkit-transition-property: margin, -webkit-transform;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s;
-        -webkit-transition-delay: 0.2s, 0;
-        -moz-transition-delay: 0.2s, 0;
-        -ms-transition-delay: 0.2s, 0;
-        -o-transition-delay: 0.2s, 0;
-        transition-delay: 0.2s, 0;
-    }
-    .menuicon span::before {
-        margin-top: -8px;
-    }
-    .menuicon span::after {
-        margin-top: 8px;
-    }
-    #hamburger:checked ~ .menuicon span{
-        background: rgba(0, 0, 0, 0);
-    }
-    /*And this is for sliding down a navbar*/
-    #hamburger:checked ~ ul.slider{
-        max-height: 530px;
-        -webkit-transition: max-height 0.3s ease-out;
-        -moz-transition: max-height 0.3s ease-out;
-        -ms-transition: max-height 0.3s ease-out;
-        -o-transition: max-height 0.3s ease-out;
-        transition: max-height 0.3s ease-out;
-    }
-    /*This is for rotating span-tags of hamburger-icon*/
-    #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
-        margin-top: 0;
-        -webkit-transition-delay: 0, 0.2s;
-        -moz-transition-delay: 0, 0.2s;
-        -ms-transition-delay: 0, 0.2s;
-        -o-transition-delay: 0, 0.2s;
-        transition-delay: 0, 0.2s;
-    }
-    #hamburger:checked ~ .menuicon span::before{
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    #hamburger:checked ~ .menuicon span::after{
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-
-    /*Responsive design article*/
-    article{
-        margin: 5%;
-    }
-    h1{
-        font-size: 1.8em;
-    }
-    table th, td{
-        font-size: 0.8em;
-    }
-}
 /*Footer styling*/
 footer{
     position:relative;
-    width: 80%;
-    float: right;
-    text-align: center;
-    margin: 3% auto;
-}
-/*
-*==========================================================================
-* Styling for contact page.
-*==========================================================================
-*/
-/* Style inputs, select elements and textareas */
-main form{
-    margin-left: auto;
-    width: 80%;
-}
-input[type="text"], input[type="email"], select, textarea{
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: none;
-}
-
-/* Floating column for labels: 25% width */
-.col-label {
-  float: left;
-  width: 26%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-input {
-  float: left;
-  width: 61%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*
-* Responsive layout - when the screen is less than 600px wide,
-* make the two columns stack on top of each other
-* instead of next to each other
-*/
-@media (max-width: 600px) {
-  main form{
-      width: 100%;
-      text-align: center;
-  }
-  .col-label, .col-input, input[type=submit], input[type=text], input[type=email], select, textarea {
     width: 100%;
-    margin-top: 0;
-  }
+    float: none;
+    text-align: center;
+    background: #444;
+    height: 60px;
 }
