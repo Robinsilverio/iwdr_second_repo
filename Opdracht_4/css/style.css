@@ -111,9 +111,6 @@ article figure > img{
 .source{
     font-style: italic;
 }
-/* .copyright{
-    text-align: center;
-} */
 
 ol, ul#digital_menu{
     padding: 0;
@@ -264,8 +261,7 @@ footer{
 }
 /*
 *==========================================================================
-* Styling for contact page, why to have an empty contact page just for
-* testing the navigation links? Please answer that Teacher ;)
+* Styling for contact page.
 *==========================================================================
 */
 /* Style inputs, select elements and textareas */
