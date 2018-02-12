@@ -34,26 +34,26 @@ nav{
     display: none;
 }
 /*For unordered list*/
-nav ul{
+nav ul.slider{
     list-style-type: none;
     padding: 0;
     margin: 20px 0 0;
 }
 /*Float all list-items to left side of the navbar*/
-nav ul li{
+nav ul.slider li{
     margin: auto;
     border-bottom: 1px solid #CCC;
 }
 /*Add some padding to give spaces between two links*/
-nav ul li a{
+nav ul.slider li a{
     display: block;
     padding: 1em;
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     cursor: pointer;
 }
 /*This is for changing background color when user hovers on a link*/
-nav ul li a:hover{
+nav ul.slider li a:hover{
     background: rgb(1, 0, 80);
     text-decoration: underline;
     color: #FFF;
@@ -115,7 +115,7 @@ article figure > img{
     text-align: center;
 } */
 
-ol{
+ol, ul#digital_menu{
     padding: 0;
     list-style-position: inside;
 }
@@ -147,7 +147,7 @@ table tr:nth-child(even){
     nav{
         position: relative;
     }
-    ul{
+    ul.slider{
       max-height: 0;
       overflow: hidden;
       -webkit-transition: max-height 0.3s ease-out;
@@ -211,7 +211,7 @@ table tr:nth-child(even){
         background: rgba(0, 0, 0, 0);
     }
     /*And this is for sliding down a navbar*/
-    #hamburger:checked ~ ul{
+    #hamburger:checked ~ ul.slider{
         max-height: 530px;
         -webkit-transition: max-height 0.3s ease-out;
         -moz-transition: max-height 0.3s ease-out;
