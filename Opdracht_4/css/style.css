@@ -2,7 +2,7 @@ html, body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* color: rgb(1, 0, 80); */
+  height: 100%;
   color: #0f9b49;
 }
 
@@ -27,6 +27,7 @@ header{
 main{
     max-width: 1000px;
     margin: 2em auto;
+    min-height: 100%;
 }
 
 ul{
@@ -36,7 +37,7 @@ ul{
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 ul img{
     width: 100%;
@@ -44,10 +45,18 @@ ul img{
 ul li{
     background: #FFF;
     cursor: pointer;
+    /* Firefox */
+    -moz-transition: all 0.3s ease;
+    /* WebKit */
+    -webkit-transition: all 0.3s ease;
+    /* Opera */
+    -o-transition: all 0.3s ease;
+    /* Standard */
+    transition: all 0.3s ease;
 }
 ul li:hover{
-    transform: rotate(5deg) scale(1.1);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px 0 rgba(17, 13, 122, 0.8);
 }
 ul li h2{
     font-size: 1.2em;
