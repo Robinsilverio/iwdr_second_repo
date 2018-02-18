@@ -34,6 +34,7 @@ ul{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-collumns: 1fr 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     margin: 0;
@@ -77,13 +78,11 @@ ul li span.prijs{
     transform: rotate(10deg);
 }
 @media (max-width: 426px) {
-    ul li span.prijs{
-        font-size: 0.5em;
-        bottom: 30px;
-        padding: 10px 3px;
+    ul{
+        grid-template-columns: 1fr;
     }
     ul li h2{
-        font-size: 0.7em;
+        font-size: 1.5em;
     }
 }
 
