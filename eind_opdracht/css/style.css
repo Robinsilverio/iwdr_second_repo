@@ -25,7 +25,7 @@ p{
 nav{
     float: left;
     width: 20%;
-    background: #eee;
+    background: #edbc00;
     position: fixed;
     height: 100%;
     padding: 20px 0 0;
@@ -75,6 +75,9 @@ nav .navbar-logo{
     text-decoration: none;
     color: rgb(1, 0, 80);
     margin: 15px;
+}
+nav .navbar-logo img{
+    height: 80px;
 }
 /*Main styling*/
 main{
