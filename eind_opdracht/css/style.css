@@ -81,10 +81,14 @@ nav .navbar-logo img{
 }
 /*Main styling*/
 main{
+    background-image: url('../img/jpg/background_the_who.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 80%;
     height: 100%;
     float: right;
     overflow: auto;
+    color: #FFF;
 }
 main #contact_header, main #contact_header ~ p{
     text-align: center;
@@ -258,13 +262,15 @@ table tr:nth-child(even){
     }
 }
 /*Footer styling*/
-footer{
+/* footer{
     position:relative;
     width: 80%;
+    height: 113px;
     float: right;
     text-align: center;
-    margin: 3% auto;
-}
+    margin: auto;
+    background: tan;
+} */
 /*
 *==========================================================================
 * Styling for contact page, why to have an empty contact page just for
@@ -272,27 +278,34 @@ footer{
 *==========================================================================
 */
 /* Style inputs, select elements and textareas */
-main form{
+/* main form{
     margin-left: auto;
     width: 80%;
-}
-input[type="text"], input[type="email"], select, textarea{
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  resize: vertical;
-}
+} */
 
 /* Style the label to display next to the inputs */
 label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+  display: block;
+  padding: 1em 0 0.5em 0;
+}
+input, textarea{
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea{
+    font-size: 1em;
+    height: 100%;
+    margin-bottom: 1em;
 }
 
 /* Style the submit button */
-input[type=submit] {
+/* input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -300,41 +313,4 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: none;
-}
-
-/* Floating column for labels: 25% width */
-.col-label {
-  float: left;
-  width: 26%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-input {
-  float: left;
-  width: 61%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*
-* Responsive layout - when the screen is less than 600px wide,
-* make the two columns stack on top of each other
-* instead of next to each other
-*/
-@media (max-width: 600px) {
-  main form{
-      width: 100%;
-      text-align: center;
-  }
-  .col-label, .col-input, input[type=submit], input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+} */

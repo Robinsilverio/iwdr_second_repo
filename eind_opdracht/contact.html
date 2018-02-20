@@ -11,73 +11,36 @@
   </head>
   <body>
     <nav>
-      <a class="navbar-logo" href="index.html">Testwebsite</a>
+      <a class="navbar-logo" href="index.html"><img src="img/png/the_who_logo.png" alt="the who bandlogo" /> </a>
       <input type="checkbox" id="hamburger"/>
       <label class="menuicon" for="hamburger">
         <span></span>
       </label>
       <ul>
-        <li><a href="index.html">Nieuws</a></li>
-        <li><a href="bestemmingen.html">Bestemmingen</a></li>
-        <li><a class="selected" href="contact.html">Contact</a></li>
+        <li><a class="selected" href="index.html">Home</a></li>
+        <li><a href="bestemmingen.html">Band</a></li>
+        <li><a href="nieuws">Nieuws</a></li>
+        <li><a href="webstore.html">webstore</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <h1 id="contact_header">Contact</h1>
-      <p>Wij creëren satiristische nieuwsartikelen, dus voel vrij om hallo te zeggen!!</p>
-      <p>Of kunt u mailen naar <a href="mailto:test@mail.nl">test@mail.nl</a></p>
-      <form action="#">
-        <div class="row">
-          <div class="col-label">
-            <label for="voornaam">Voornaam: </label>
-          </div>
-          <div class="col-input">
-            <input type="text" id="voornaam" name="voornaam" required placeholder="Jouw voornaam..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-label">
-            <label for="achternaam">Achternaam: </label>
-          </div>
-          <div class="col-input">
-            <input type="text" id="achternaam" required name="achternaam" placeholder="Jouw achternaam..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-label">
-            <label for="achternaam">Emailadres: </label>
-          </div>
-          <div class="col-input">
-            <input type="email" id="email" required name="email" placeholder="Jouw emailadres..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-label">
-            <label for="land">Land: </label>
-          </div>
-          <div class="col-input">
-            <select id="land" name="land">
-              <option value="nederland">Nederland</option>
-              <option value="duitsland">Duitsland</option>
-              <option value="vs">VS</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-label">
-            <label for="subject">Subject: </label>
-          </div>
-          <div class="col-input">
-            <textarea id="subject" name="subject" placeholder="Schrijf een bericht..." style="height:200px" maxlength="280"></textarea>
-          </div>
-        </div>
-        <div class="row">
+      <article class="">
+        <h1 id="contact_header">Contact</h1>
+        <p>Wij creëren satiristische nieuwsartikelen, dus voel vrij om hallo te zeggen!!</p>
+        <p>Of kunt u mailen naar <a href="mailto:test@mail.nl">test@mail.nl</a></p>
+        <form action="#">
+          <label for="voornaam">Voornaam: </label>
+          <input type="text" id="voornaam" name="voornaam" required placeholder="Jouw voornaam..">
+          <label for="achternaam">Achternaam: </label>
+          <input type="text" id="achternaam" required name="achternaam" placeholder="Jouw achternaam..">
+          <label for="achternaam">Emailadres: </label>
+          <input type="email" id="email" required name="email" placeholder="Jouw emailadres..">
+          <label for="subject">Subject: </label>
+          <textarea id="subject" name="subject" placeholder="Schrijf een bericht..." style="height:200px" maxlength="280"></textarea>
           <input type="submit" value="Verzenden">
-        </div>
-      </form>
+        </form>
+      </article>
     </main>
-    <footer>
-      <p class="copyright">Copyright © 2018 Robin</p>
-    </footer>
   </body>
 </html>
