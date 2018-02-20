@@ -176,6 +176,10 @@ table tr:nth-child(even){
       -o-transition: max-height 0.3s ease-out;
       transition: max-height 0.3s ease-out;
     }
+    ul.dropdown_menu{
+        position: relative;
+        max-height: 100%;
+    }
     .menuicon{
         position: relative;
         width: 25px;
