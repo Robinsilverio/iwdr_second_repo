@@ -7,14 +7,22 @@ html, body{
 
 h1{
     font-size: 2.5em;
+    color: #edbc00
 }
 
 h2{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: #edbc00;
+}
+
+h3{
+    font-size: 1.125em;
+    color: #edbc00;
 }
 
 p{
     line-height: 1.55;
+    font-size: 1em;
 }
 
 /*
@@ -156,6 +164,17 @@ table tr:nth-child(even){
     color: #FFF;
 }
 
+/*Footer styling*/
+footer{
+    position:relative;
+    width: 80%;
+    height: 113px;
+    float: right;
+    text-align: center;
+    margin: auto;
+    background: tan;
+}
+
 /*
 * Responsive layout menu and main.
 */
@@ -278,16 +297,7 @@ table tr:nth-child(even){
         font-size: 0.8em;
     }
 }
-/*Footer styling*/
-/* footer{
-    position:relative;
-    width: 80%;
-    height: 113px;
-    float: right;
-    text-align: center;
-    margin: auto;
-    background: tan;
-} */
+
 /*
 *==========================================================================
 * Styling for contact page, why to have an empty contact page just for
