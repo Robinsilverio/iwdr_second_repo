@@ -7,18 +7,17 @@ html, body{
 
 h1{
     font-size: 2.5em;
-    color: #edbc00
 }
 
 h2{
     font-size: 1.5em;
-    color: #edbc00;
 }
 
 h3{
     font-size: 1.125em;
-    color: #edbc00;
 }
+
+h1, h2, h3{ color: #edbc00; }
 
 p{
     line-height: 1.55;
@@ -306,10 +305,12 @@ footer{
 *==========================================================================
 */
 /* Style inputs, select elements and textareas */
-/* main form{
-    margin-left: auto;
-    width: 80%;
-} */
+form{
+    background-color: #edbc00;
+    border-radius: 2%;
+    padding: 15px;
+    color: #000;
+}
 
 /* Style the label to display next to the inputs */
 label {
@@ -320,7 +321,7 @@ input, textarea{
     font-size: 1em;
     display: block;
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     padding: 0.8em;
     border: 1px solid #ccc;
     border-radius: 5px;
