@@ -114,13 +114,6 @@ main{
     overflow: auto;
     color: #FFF;
 }
-/*Responsive image background*/
-/* @media (max-width: 426px) {
-    main{
-      background-position: center center;
-      background-attachment: fixed;
-    }
-} */
 
 main #contact_header, main #contact_header ~ p{
     text-align: center;
