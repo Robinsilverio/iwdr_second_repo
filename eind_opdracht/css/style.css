@@ -104,15 +104,24 @@ nav .navbar-logo img{
 
 /*Main styling*/
 main{
-    background-image: url('../img/jpg/background_the_who.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url('../img/jpg/background_the_who.jpg') no-repeat, #000;
+    background-size: 90%;
+    background-attachment: fixed;
+    background-position: 230px;
     width: 80%;
     height: 100%;
     float: right;
     overflow: auto;
     color: #FFF;
 }
+/*Responsive image background*/
+/* @media (max-width: 426px) {
+    main{
+      background-position: center center;
+      background-attachment: fixed;
+    }
+} */
+
 main #contact_header, main #contact_header ~ p{
     text-align: center;
 }
@@ -130,9 +139,7 @@ article .news_title{
 article #inleiding{
     font-weight: bold;
 }
-article figure{
-    margin: auto;
-}
+
 /*Give image 100% width of main*/
 article figure > img{
     width: 100%;
@@ -173,6 +180,7 @@ footer{
     margin: auto;
     background: tan;
 }
+footer .copyright{ margin: 0; }
 
 /*
 * Responsive layout menu and main.
@@ -287,6 +295,11 @@ footer{
     }
 
     /*Responsive design article*/
+    main{
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: center;
+    }
     article{
         margin: 5%;
     }
