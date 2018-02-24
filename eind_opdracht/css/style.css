@@ -11,6 +11,7 @@ h1{
 
 h2{
     font-size: 1.5em;
+    border-bottom: 2px solid;
 }
 
 h3{
@@ -135,7 +136,8 @@ article #inleiding{
 
 /*Give image 100% width of main*/
 article figure > img{
-    width: 100%;
+    width: 90%;
+    height: 450px;
 }
 
 .source{
