@@ -169,11 +169,11 @@ table tr:nth-child(even){
 footer{
     position:relative;
     width: 80%;
-    height: 113px;
+    height: 90px;
     float: right;
     text-align: center;
     margin: auto;
-    background: tan;
+    background: #edbc00;
 }
 footer .copyright{ margin: 0; }
 
