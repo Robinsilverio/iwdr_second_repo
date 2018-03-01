@@ -140,9 +140,9 @@ article figure > img{
     height: 450px;
 }
 /*Except the current band page*/
-article.current_band figure > img{
-    width: 49%;
-    height: 450px;
+article section figure > img{
+    width: 50%;
+    height: 350px;
     padding: 15px;
     float: left;
 }
@@ -305,6 +305,9 @@ footer .copyright{ margin: 0; }
     }
     article{
         margin: 5%;
+    }
+    article section figure > img{
+        height: 250px;
     }
     h1{
         font-size: 1.8em;
