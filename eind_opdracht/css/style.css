@@ -139,6 +139,13 @@ article figure > img{
     width: 90%;
     height: 450px;
 }
+/*Except the current band page*/
+article.current_band figure > img{
+    width: 49%;
+    height: 450px;
+    padding: 15px;
+    float: left;
+}
 article figure{ margin: auto; }
 
 .source{
