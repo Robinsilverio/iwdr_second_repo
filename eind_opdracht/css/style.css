@@ -147,6 +147,14 @@ article section figure > img{
     float: left;
 }
 article figure{ margin: auto; }
+article .news_item {margin-bottom: 120px;}
+article .link_btn{
+    padding: 10px;
+    background-color: #edbc00;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
 
 .source{
     font-style: italic;
