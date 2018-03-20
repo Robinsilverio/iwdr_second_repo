@@ -31,11 +31,8 @@ p{
 *==========================================================================
 */
 nav{
-    float: left;
-    width: 20%;
     background: #edbc00;
-    position: fixed;
-    height: 100%;
+    height: 80px;
     padding: 20px 0 0;
 }
 #hamburger, .menuicon{
@@ -44,8 +41,8 @@ nav{
 /*For unordered list*/
 nav ul{
     list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0;
+    margin: 0px 70px 0 0;
+    float: right;
 }
 /*This is for dropdown-menu's*/
 nav ul li#member-dropdown-btn ul.dropdown_menu{
@@ -54,8 +51,12 @@ nav ul li#member-dropdown-btn ul.dropdown_menu{
     padding: 0px;
     margin: 0;
     position: absolute;
-    width: 100%;
+    width: 15%;
     overflow: auto;
+    z-index: 1;
+}
+ul.dropdown-menu li{
+    display:
 }
 nav ul li#member-dropdown-btn:hover > ul{
     display: block;
@@ -63,7 +64,8 @@ nav ul li#member-dropdown-btn:hover > ul{
 /*Float all list-items to left side of the navbar*/
 nav ul li{
     margin: auto;
-    border-bottom: 1px solid #CCC;
+    display: inline-table;
+    padding: 5px;
 }
 /*Add some padding to give spaces between two links*/
 nav ul li a{
@@ -89,7 +91,7 @@ nav ul li a:hover{
 /*Logo styling*/
 nav .navbar-logo{
     position: relative;
-    top: 0;
+    top: -10;
     font-size: 25px;
     line-height: 1.042;
     font-weight: 700;
@@ -98,7 +100,8 @@ nav .navbar-logo{
     margin: 15px;
 }
 nav .navbar-logo img{
-    height: 50px;
+    height: 70px;
+    width: 100px;
 }
 
 
@@ -109,9 +112,8 @@ main{
     background-size: 90%;
     background-attachment: fixed;
     background-position: 230px;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    float: right;
     overflow: auto;
     color: #FFF;
 }
@@ -147,13 +149,30 @@ article section figure > img{
     float: left;
 }
 article figure{ margin: auto; }
-article .news_item {margin-bottom: 120px;}
-article .link_btn{
+
+/*
+*=========================
+* News items page styling
+* ========================
+**/
+article#news_area{
+    margin: 4% auto;
+    max-width: 800px;
+    background: #da2128;
+    padding: 10px;
+    border-radius: 5px;
+}
+article#news_area .news_item {margin-bottom: 200px;}
+article#news_area .link_btn{
     padding: 10px;
     background-color: #edbc00;
     border-radius: 5px;
     color: #FFF;
     text-decoration: none;
+}
+article#news_area .news_item_title{
+    border: 0px;
+    font-size: 1.3em;
 }
 
 .source{
@@ -168,6 +187,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    color: #000;
 }
 table th, td{
     text-align: left;
@@ -181,12 +201,73 @@ table tr:nth-child(even){
     color: #FFF;
 }
 
-/*Footer styling*/
+/*
+* ==========================================================
+* Homepage Styling
+* ==========================================================
+*/
+
+main#homepage section#middle_section {
+    width: 80%;
+    margin: 10px auto;
+    background: #da2128;
+    padding: 10px;
+    border-radius: 5px;
+}
+main#homepage section#middle_section h2{ color: #FFF; border: 0;}
+
+main#homepage section#tour_agenda {
+    width: 80%;
+    margin: 20px auto;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+main#homepage section#tour_agenda h2{ color: #000; border: 0;}
+
+ul#home_block, ul#home_block_under{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-collumns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin: 0;
+    padding: 10px;
+}
+
+ul#home_block img, ul#home_block_under img{
+    width: 100%;
+}
+ul#home_block li, ul#home_block_under li{
+    background-color: #3fa9f5;
+    padding: 20px;
+}
+ul#home_block p.block_title, ul#home_block_under p.block_title{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 0.2;
+    font-weight: bold;
+}
+ul#home_block li p, ul#home_block_under li p { color: #FFF; }
+ul#home_block .link_btn{
+    color: #FFF;
+    background: #edbc00;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+
+/*
+* ==========================================================
+* Footer styling
+* ==========================================================
+*/
 footer{
     position:relative;
-    width: 80%;
     height: 90px;
-    float: right;
     text-align: center;
     margin: auto;
     background: #edbc00;
@@ -203,6 +284,15 @@ footer .copyright{ margin: 0; }
     }
     nav{
         position: relative;
+        display: inline-table;
+    }
+    nav ul{
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{
+        display: block;
     }
     ul{
       max-height: 0;
@@ -223,7 +313,6 @@ footer .copyright{ margin: 0; }
         height: 21px;
         display: block;
         float: right;
-        bottom: 10px;
         right: 20px;
     }
     .menuicon span{
@@ -310,6 +399,10 @@ footer .copyright{ margin: 0; }
         background-size: 106%;
         background-attachment: fixed;
         background-position: center;
+    }
+    ul#home_block, ul#home_block_under{
+      grid-template-columns: 1fr;
+      max-height: 100%;
     }
     article{
         margin: 5%;
