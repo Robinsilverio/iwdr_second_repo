@@ -207,14 +207,9 @@ table tr:nth-child(even){
 * ==========================================================
 */
 
-main#homepage section#middle_section {
-    width: 80%;
-    margin: 10px auto;
-    background: #da2128;
-    padding: 10px;
-    border-radius: 5px;
+main#homepage section#slider_section{
+    margin-bottom: 20px;
 }
-main#homepage section#middle_section h2{ color: #FFF; border: 0;}
 
 main#homepage section#tour_agenda {
     width: 80%;
@@ -232,12 +227,15 @@ ul#home_block, ul#home_block_under{
     -ms-grid-collumns: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    margin: 0;
+    margin: auto;
     padding: 10px;
+    background-color: #da2128;
+    width: 80%;
 }
 
 ul#home_block img, ul#home_block_under img{
     width: 100%;
+    height: 150px;
 }
 ul#home_block li, ul#home_block_under li{
     background-color: #3fa9f5;
