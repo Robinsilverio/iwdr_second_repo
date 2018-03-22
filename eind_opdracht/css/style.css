@@ -285,12 +285,10 @@ footer .copyright{ margin: 0; }
 /*
 * Responsive layout menu and main.
 */
-@media (max-width: 800px){
-    nav, main, footer{
+@media (max-width: 1024px) {
+    nav{
         float: none !important;
         width: 100%;
-    }
-    nav{
         position: relative;
         display: inline-table;
     }
@@ -402,6 +400,17 @@ footer .copyright{ margin: 0; }
         transform: rotate(-45deg);
     }
 
+    ul#home_block, ul#home_block_under{
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    main, footer{
+        float: none !important;
+        width: 100%;
+    }
+
     /*Responsive design article*/
     main{
         background-size: 106%;
@@ -410,7 +419,6 @@ footer .copyright{ margin: 0; }
     }
     ul#home_block, ul#home_block_under{
       grid-template-columns: 1fr;
-      max-height: 100%;
     }
     article{
         margin: 5%;
