@@ -126,6 +126,10 @@ main #contact_header, main #contact_header ~ p{
 article{
     margin: 4% auto;
     max-width: 800px;
+    background: #eee;
+    padding: 20px;
+    color: #000;
+    border-radius: 5px;
 }
 /*Of course, header must be centered*/
 article .news_title{
@@ -155,22 +159,28 @@ article figure{ margin: auto; }
 * News items page styling
 * ========================
 **/
-article#news_area{
+article.news_item{
     margin: 4% auto;
     max-width: 800px;
     background: #da2128;
     padding: 10px;
     border-radius: 5px;
 }
-article#news_area .news_item {margin-bottom: 200px;}
-article#news_area .link_btn{
+article.news_item figure > img{
+    width: 50%;
+    height: 250px;
+    padding: 15px;
+    float: left;
+}
+
+article.news_item .link_btn{
     padding: 10px;
     background-color: #edbc00;
     border-radius: 5px;
     color: #FFF;
     text-decoration: none;
 }
-article#news_area .news_item_title{
+article.news_item .news_item_title{
     border: 0px;
     font-size: 1.3em;
 }
