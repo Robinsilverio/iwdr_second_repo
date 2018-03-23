@@ -7,13 +7,13 @@ ul#webstore{
     grid-row-gap: 1em;
     margin: 0;
     padding: 10px;
+    max-height: 100%;
 }
 ul#webstore img{
     width: 100%;
 }
 ul#webstore li{
     background: #FFF;
-    cursor: pointer;
     /* Firefox */
     -moz-transition: all 0.3s ease;
     /* WebKit */
@@ -22,10 +22,6 @@ ul#webstore li{
     -o-transition: all 0.3s ease;
     /* Standard */
     transition: all 0.3s ease;
-}
-ul#webstore li:hover{
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px 0 rgba(17, 13, 122, 0.8);
 }
 ul#webstore li h2{
     font-size: 1.2em;
@@ -58,4 +54,14 @@ ul#webstore li .link_btn{
     border-radius: 10px;
     text-decoration: none;
     width: 90%;
+}
+ul#webstore li .link_btn:hover{
+    box-shadow: 0 5px 10px 0 rgba(17, 13, 122, 0.8);
+}
+
+@media (max-width: 768px) {
+    ul#webstore{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 552px) {
+    ul#webstore{ grid-template-columns: 1fr; }
 }
