@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Robin Silvério">
+    <meta name="description" content="The Who, bestelformulier">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='img/WhoLogo-favicon.png' />
+    <title>Bestelformulier</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <nav>
+      <a class="navbar-logo" href="index.html"><img src="img/png/the_who_logo.png" alt="the who bandlogo"> </a>
+      <input type="checkbox" id="hamburger"/>
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="band/current_band.html">Current Touring Band</a>
+        </li>
+        <li><a href="gallery.html">Photos</a></li>
+        <li><a href="news/index.html">News</a></li>
+        <li><a href="webstore.html">Webstore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About The Who</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h1>Order form</h1>
+        <form id="order_form" action="#">
+          <label for="firstname">Firstname: </label>
+          <input type="text" id="firstname" name="firstname" required placeholder="Your firstname..">
+          <label for="surname">Surname: </label>
+          <input type="text" id="surname" required name="surname" placeholder="Your surname..">
+          <label for="address">Address + number: </label>
+          <input type="text" id="address" required name="address" placeholder="Enter your address..">
+          <label for="surname">Place: </label>
+          <input type="text" id="place" required name="place" placeholder="Enter your place..">
+          <label for="phone">Phone: </label>
+          <input type="text" id="phone" required name="phone" placeholder="Enter your phonenumber..">
+          <label for="email">Emailaddress: </label>
+          <input type="email" id="email" required name="email" placeholder="Your emailaddress..">
+          <label for="paymethod">Which paymethod do you want to use?</label>
+          <div id="paymethod">
+            <input type="radio" name="gender" value="PayPal" />
+            <label for="PayPal">PayPal</label>
+            <input type="radio" name="gender" value="Creditcard" />
+            <label for="Creditcard">Creditcard</label>
+            <input type="radio" name="gender" value="IDEAL" />
+            <label for="IDEAL">IDEAL</label>
+          </div>
+          <input type="submit" value="Order">
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p class="copyright">Copyright &copy; 2018 Robin</p>
+    </footer>
+  </body>
+</html>
