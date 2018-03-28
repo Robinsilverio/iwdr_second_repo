@@ -277,6 +277,42 @@ ul#home_block .link_btn{
   text-align: center;
 }
 
+/*Styling for top 10 list page*/
+.top_10 ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 100%;
+}
+.top_10 ul li{
+  padding: 40px 0 40px;
+  position: relative;
+}
+.top_10 ul li span.count{
+  padding: 15px 20px 15px 20px;
+  color: #FFF;
+  background: grey;
+  display: inline-block;
+}
+.top_10 ul li p.list_title{
+  display: inline-block;
+  font-size: 1.6em;
+  margin-left: 20px;
+}
+.top_10 ul li div.videoWrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.top_10 ul li div.videoWrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*
 *==========================================================================
 * Styling for forms
