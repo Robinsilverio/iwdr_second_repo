@@ -43,6 +43,7 @@ nav ul{
   list-style-type: none;
   margin: 0px 70px 0 0;
   float: right;
+  padding: 0;
 }
 /*This is for dropdown-menu's*/
 nav ul li#member-dropdown-btn ul.dropdown_menu{
@@ -348,7 +349,7 @@ footer .copyright{ margin: 0; }
 /*
 * Responsive layout menu and main.
 */
-@media (max-width: 1024px) {
+@media (max-width: 1185px) {
   nav{
     float: none !important;
     width: 100%;
