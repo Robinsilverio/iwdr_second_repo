@@ -18,7 +18,7 @@ h3{
   font-size: 1.125em;
 }
 
-h1, h2, h3{ color: #edbc00; }
+h1, h2, h3{ color: #cca300; }
 
 p{
   line-height: 1.55;
@@ -88,7 +88,7 @@ nav ul li a:hover{
 /*Logo styling*/
 nav .navbar-logo{
   position: relative;
-  top: -10;
+  top: -10px;
   font-size: 25px;
   line-height: 1.042;
   font-weight: 700;
@@ -131,7 +131,6 @@ article{
 /*Of course, heading must be centered*/
 article .news_title{
   text-align: center;
-  rgb(1, 0, 80)
 }
 /*Short text description must be bold*/
 article #inleiding{
