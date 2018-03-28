@@ -291,12 +291,12 @@ ul#home_block .link_btn{
 .top_10 ul li span.count{
   padding: 15px 20px 15px 20px;
   color: #FFF;
-  background: grey;
+  background: #e6004c;
   display: inline-block;
 }
 .top_10 ul li p.list_title{
-  display: inline-block;
-  font-size: 1.6em;
+  display: inline;
+  font-size: 1.2em;
   margin-left: 20px;
 }
 .top_10 ul li div.videoWrapper{
