@@ -72,19 +72,17 @@ nav ul li a{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 /*This is for changing background color when user hovers on a link*/
 nav ul li a:hover{
-  background: rgb(1, 0, 80);
-  text-decoration: underline;
-  color: #FFF;
   opacity: 0.8;
+  border-bottom: 2px solid rgb(1, 0, 80);
 }
 /*When a link is selected, keep that background color.*/
 .selected{
-  background: rgb(1, 0, 80);
-  text-decoration: underline;
-  color: #FFF;
+  opacity: 0.8;
+  border-bottom: 2px solid rgb(1, 0, 80);
 }
 /*Logo styling*/
 nav .navbar-logo{
