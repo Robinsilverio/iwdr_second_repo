@@ -46,14 +46,11 @@
           <label for="email">Emailaddress: </label>
           <input type="email" id="email" required name="email" placeholder="Your emailaddress..">
           <label for="paymethod">Which paymethod do you want to use?</label>
-          <div id="paymethod">
-            <input type="radio" name="gender" value="PayPal" />
-            <label for="PayPal">PayPal</label>
-            <input type="radio" name="gender" value="Creditcard" />
-            <label for="Creditcard">Creditcard</label>
-            <input type="radio" name="gender" value="IDEAL" />
-            <label for="IDEAL">IDEAL</label>
-          </div>
+          <select id="paymethod" name="paymethod">
+            <option value="PayPal">PayPal</option>
+            <option value="Creditcard">Creditcard</option>
+            <option value="IDEAL">IDEAL</option>
+          </select>
           <input type="submit" value="Order">
         </form>
       </article>

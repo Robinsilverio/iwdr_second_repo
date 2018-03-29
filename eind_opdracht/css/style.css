@@ -363,23 +363,13 @@ textarea{
   height: 100%;
   margin-bottom: 1em;
 }
-form div#paymethod{
-  float: left;
-  clear: none;
-  padding: 5px;
+select{
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  border-radius: 15px;
+  border: 0;
   margin-bottom: 20px;
-}
-form div#paymethod label{
-  float: left;
-  clear: none;
-  display: block;
-  padding: 2px 1em 0 0;
-}
-form div#paymethod input[type="radio"]{
-  float: left;
-  clear: none;
-  margin: 2px 0 0 -28px;
-  width: 60%;
 }
 
 
