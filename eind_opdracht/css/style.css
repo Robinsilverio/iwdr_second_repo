@@ -418,11 +418,11 @@ footer .social_media_link img{
   ul{
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.3s ease-out;
-    -moz-transition: max-height 0.3s ease-out;
-    -ms-transition: max-height 0.3s ease-out;
-    -o-transition: max-height 0.3s ease-out;
-    transition: max-height 0.3s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
   ul.dropdown_menu{
     position: relative;
@@ -435,6 +435,7 @@ footer .social_media_link img{
     display: block;
     float: right;
     right: 20px;
+    cursor: pointer;
   }
   .menuicon span{
     display: block;
@@ -485,11 +486,11 @@ footer .social_media_link img{
   /*And this is for sliding down a navbar*/
   #hamburger:checked ~ ul{
     max-height: 530px;
-    -webkit-transition: max-height 0.3s ease-out;
-    -moz-transition: max-height 0.3s ease-out;
-    -ms-transition: max-height 0.3s ease-out;
-    -o-transition: max-height 0.3s ease-out;
-    transition: max-height 0.3s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
   /*This is for rotating span-tags of hamburger-icon*/
   #hamburger:checked ~ .menuicon span::before, #hamburger:checked ~ .menuicon span::after{
