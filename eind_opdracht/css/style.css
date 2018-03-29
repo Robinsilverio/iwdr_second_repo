@@ -392,6 +392,10 @@ footer{
   background: #edbc00;
 }
 footer .copyright{ margin: 0; }
+footer .social_media_link img{
+  width: 30px;
+  padding: 15px;
+}
 
 /*
 * Responsive layout menu and main.
