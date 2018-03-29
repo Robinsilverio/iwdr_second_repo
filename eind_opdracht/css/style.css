@@ -216,7 +216,6 @@ table th, td{
 }
 table tr:nth-child(even){
   background: rgb(1, 0, 80);
-  opacity: 0.5;
   color: #FFF;
 }
 
@@ -238,6 +237,14 @@ main#homepage section#tour_agenda {
   border-radius: 5px;
 }
 main#homepage section#tour_agenda h2{ color: #000; border: 0;}
+main#homepage section#tour_agenda a{
+  background: red;
+  padding: 5px;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
 
 ul#home_block, ul#home_block_under{
   display: grid;
@@ -541,5 +548,8 @@ footer .copyright{ margin: 0; }
   ul#home_block img.news_img{
     max-width: 100%;
     float: none;
+  }
+  table th, td{
+      font-size: 0.5em;
   }
 }
