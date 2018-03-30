@@ -16,7 +16,7 @@ section#gallery_section h2 {
 
 section#gallery_section .gallery {
     width: 840px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 0px;
     background: transparent;
 }
